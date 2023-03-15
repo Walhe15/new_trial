@@ -1,12 +1,12 @@
 #!/bin/bash
 
 current_branch=$(git rev-parse --abbrev-ref HEAD)
-username=''
-title=''
+username='walhe15'
+title='new_trial'
 password=''
 
 usage() {
-  echo "Usage: th-pr [-u <username>] [-p <password/token>] [-t <title of the PR>] <body of the PR>"
+  echo "Usage: open-pr [-u <username>] [-p <password/token>] [-t <title of the PR>] <body of the PR>"
 }
 
 while getopts ':u:p:t:h' opt; do
